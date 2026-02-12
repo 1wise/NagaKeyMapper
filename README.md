@@ -39,7 +39,7 @@ The configuration file `mapping_xx.txt` has the following syntax:
     For delay: delay in milliseconds
 
 ### KEYBOARD FUNCTION (key)
-For mapping a key from keyboard you need to look up your key e.g. here: /usr/include/linux/input-event-codes.h . You need to exclude the beginning `KEY_` so for example caps lock would be `Capslock`. 
+For mapping a key from keyboard you need to look up your key e.g. here: /usr/include/linux/input-event-codes.h . 
 If you want to test your shortcut you can use `ydotool key <code>:1 <code>:0` . :1 keytouch, :0 keyrelease, coding acording to input-event-code.h data. If no error appears the shortcut works. **Keep in mind this not only tests but also executes the shortcut.**
 ### NOTES
 If the `$HOME/.naga/mapping_01.txt` file is missing the daemon won't start (the program will NOT autocreate this file, the install.sh script will copy example files though).

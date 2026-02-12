@@ -38,21 +38,9 @@ The configuration file `mapping_xx.txt` has the following syntax:
     For position: x,y which are the relative position in pixel from the left upper corner of the display
     For delay: delay in milliseconds
 
-### MOUSE FUNCTION (click)
-Button number | Info
------------- | -------------
-1 | left button
-2 | middle button (pressing the scroll wheel)
-3 | right button
-4 | turn scroll wheel up
-5 | turn scroll wheel down
-6 | push scroll wheel left (some mouse only)
-7 | push scroll wheel right (some mouse only)
-8 | 4th button (aka backward button)
-9 | 5th button (aka forward button)
 ### KEYBOARD FUNCTION (key)
 For mapping a key from keyboard you need to look up your key e.g. here: /usr/include/linux/input-event-codes.h . You need to exclude the beginning `KEY_` so for example caps lock would be `Capslock`. 
-If you want to test your shortcut you can use `ydotool key KEYorSHORTCUT` . If no error appears the shortcut works. **Keep in mind this not only tests but also executes the shortcut.**
+If you want to test your shortcut you can use `ydotool key <code>:1 <code>:0` . :1 keytouch, :0 keyrelease, coding acording to input-event-code.h data. If no error appears the shortcut works. **Keep in mind this not only tests but also executes the shortcut.**
 ### NOTES
 If the `$HOME/.naga/mapping_01.txt` file is missing the daemon won't start (the program will NOT autocreate this file, the install.sh script will copy example files though).
 

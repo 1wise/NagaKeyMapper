@@ -5,3 +5,5 @@
 5-key=29:1 46:1 46:0 29:0           # Copy
 6-key=29:1 47:1 47:0 29:0           # Paste
 7-key=1:1 1:0                       # Escape
+12-chmap=mapping_02.txt             # switch mapping
+11-chmap=mapping_03.txt             # switch mapping

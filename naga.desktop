@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=NagaMapper
+Exec=/usr/local/bin/nagastart.sh
+X-GNOME-Autostart-enabled=true
+Terminal=false
